@@ -4,7 +4,10 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
         return true;
     }else if((a == b) && (b < c)){
         return true;
-    }else{
+    }else if((a == b) && (b == c)){
+        return true;
+    }
+    else{
         return false;
     }
 
