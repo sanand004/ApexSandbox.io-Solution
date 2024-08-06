@@ -1,8 +1,18 @@
 public String aOrAn(String word) {
-    Set<String> vowels = new Set<String>{'a','e','i','o','u'};
+Set<String> vowels = new Set<String>{'a','e','i','o','u'};
 
+String finalVowel;
 
-  List<String> wordList = new List<String>();
+List<String> wordList = new List<String>();
 
-  wordList = word.strip();
+  wordList = word.getChars();
+
+  for(String s: wordList){
+      if(vowels.contains(s)){
+          finalVowel = 'an'+ ' '+word;
+      }else{
+          finalVowel = 'a'+ ' '+word;
+      }
+  }
+    return finalVowel;
 }
