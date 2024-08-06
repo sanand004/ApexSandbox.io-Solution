@@ -1,0 +1,8 @@
+public String aOrAn(String word) {
+    Set<String> vowels = new Set<String>{'a','e','i','o','u'};
+
+
+  List<String> wordList = new List<String>();
+
+  wordList = word.strip();
+}
