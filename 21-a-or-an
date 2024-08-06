@@ -7,12 +7,10 @@ List<String> wordList = new List<String>();
 
   wordList = word.getChars();
 
-  for(String s: wordList){
-      if(vowels.contains(s)){
+      if(vowels.contains(wordList[0])){
           finalVowel = 'an'+ ' '+word;
       }else{
           finalVowel = 'a'+ ' '+word;
       }
-  }
-    return finalVowel;
+          return finalVowel;
 }
